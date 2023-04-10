@@ -14,10 +14,11 @@ public class PQ_heap <E extends Comparable<E>> {
 	   private Heap<E> heap;
 
 	// Constructor method
-   PQ_heap(Heap heap) {
+    PQ_heap(Heap heap) {
 	   	  this.heap = new Heap<>();
    }
-	
+
+
 	// Return true if priority queue is empty; otherwise return false
    public boolean is_empty() {
 	   	  return heap.getSize() == 0;
