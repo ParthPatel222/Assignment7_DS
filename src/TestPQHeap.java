@@ -7,6 +7,7 @@ public class TestPQHeap {
 		Heap heap = new Heap();
 		PQ_heap<?> pq = null;
 		int choice;
+		String type = "";
 
 		do {
 			System.out.println("""
@@ -27,7 +28,7 @@ public class TestPQHeap {
 			switch (choice){
 				case 0:
 					System.out.println("Enter Queue Type (integer or string): ");
-					String type = scan.next();
+					 type = scan.next();
 					if (type.equals("integer")){
 						pq = new PQ_heap<Integer>(heap);
 					}
@@ -41,7 +42,15 @@ public class TestPQHeap {
 				case 1:
 					System.out.println("Enter Element to Enqueue: ");
 					String element = scan.next();
-					pq.enqueue(element);
+					if (type == "integer"){
+						pq.enqueue(Integer.parseInt(element));
+					}
+					else if (type == "string"){
+						pq.enqueue(element);
+					}
+					else {
+						System.out.println("Invalid Queue Type");
+					}
 					break;
 			}
 
