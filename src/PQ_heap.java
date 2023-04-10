@@ -6,14 +6,16 @@
 // Assignment: 7
 // IDE Name: <IntelliJ>
 
+import java.util.PriorityQueue;
+
 public class PQ_heap <E extends Comparable<E>> {
 
 	//Create the heap object as private data member
-
+	   private Heap<E> heap;
 
 	// Constructor method
    PQ_heap(Heap heap) {
-	   	  this.heap = heap;
+	   	  this.heap = new Heap<>();
    }
 	
 	// Return true if priority queue is empty; otherwise return false
@@ -32,7 +34,7 @@ public class PQ_heap <E extends Comparable<E>> {
 	   if (is_empty()){
 		   return null;
 	   }
-	   return (E) heap.top();
+	   return heap.top();
    }
 
 	// return number of elements in the queue
@@ -46,7 +48,7 @@ public class PQ_heap <E extends Comparable<E>> {
 	   if (is_empty()){
 		   return null;
 	   }
-	   return (E) heap.remove();
+	   return heap.remove();
    }
 
 	// Inserts the 'value' into the priority queue.
@@ -56,5 +58,5 @@ public class PQ_heap <E extends Comparable<E>> {
 		   return;
 	   }
 	   heap.add(value);
-   };
+   }
 }

@@ -86,7 +86,7 @@ public class Heap<E extends Comparable<E>> {
   }
 
   //return the top element of the heap but don't remove it
-    public E top() {
-        return list.get(0);
-    }
+  public E top() {
+    return list.get(0);
+  }
 }
