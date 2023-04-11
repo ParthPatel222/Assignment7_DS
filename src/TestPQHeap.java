@@ -4,8 +4,7 @@ public class TestPQHeap {
 	public static void main(String[]args){
 		Scanner scan = new Scanner(System.in);
 
-		Heap heap = new Heap();
-		PQ_heap<?> pq = null;
+		PQ_heap pq = null;
 		int choice;
 		String type = "";
 
@@ -29,11 +28,12 @@ public class TestPQHeap {
 				case 0:
 					System.out.println("Enter Queue Type (integer or string): ");
 					 type = scan.next();
+					 type = type.toLowerCase();
 					if (type.equals("integer")){
-						pq = new PQ_heap<Integer>(heap);
+						pq = new PQ_heap<>();
 					}
 					else if (type.equals("string")){
-						pq = new PQ_heap<String>(heap);
+						pq = new PQ_heap<String>();
 					}
 					else {
 						System.out.println("Invalid Queue Type");
@@ -42,16 +42,57 @@ public class TestPQHeap {
 				case 1:
 					System.out.println("Enter Element to Enqueue: ");
 					String element = scan.next();
-					if (type == "integer"){
-						pq.enqueue(Integer.parseInt(element));
+					if (type.equals("integer")){
+						pq.enqueue(element);
 					}
-					else if (type == "string"){
+					else if (type.equals("string")){
 						pq.enqueue(element);
 					}
 					else {
 						System.out.println("Invalid Queue Type");
 					}
 					break;
+				case 2: if (pq.is_empty()){
+						System.out.println("Queue is Empty");
+						break;
+				}
+					System.out.println("Dequeued Element: " + pq.dequeue());
+					break;
+				case 3:
+					if (pq.is_full()){
+						System.out.println("PQueue is Full");
+					}
+					else {
+						System.out.println("PQueue is not Full");
+					}
+					break;
+				case 4: if (pq.is_empty()){
+					System.out.println("PQueue is Empty");
+					break;
+				} else {
+					System.out.println("PQueue is not Empty");
+				}
+					break;
+				case 5:
+					System.out.println("PQueue Size: " + pq.size());
+					break;
+				case 6: if (pq.is_empty()){
+					System.out.println("Queue is Empty");
+					break;
+				}
+					System.out.println("Front Element: " + pq.front());
+					break;
+				case 7: if (pq.is_empty()){
+					System.out.println("Queue is Empty");
+					break;
+				}
+					System.out.println("PQueue Elements: " + pq);
+					break;
+				case 8:
+					System.out.println("Exiting Program...");
+					break;
+				default:
+					System.out.println("Invalid Option");
 			}
 
 

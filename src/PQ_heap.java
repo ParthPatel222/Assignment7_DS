@@ -14,7 +14,7 @@ public class PQ_heap <E extends Comparable<E>> {
 	   private Heap<E> heap;
 
 	// Constructor method
-    PQ_heap(Heap heap) {
+    PQ_heap() {
 	   	  this.heap = new Heap<>();
    }
 
