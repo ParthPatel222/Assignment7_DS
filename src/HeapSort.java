@@ -1,5 +1,5 @@
-// Class Heap.java 
-// Textbook - Listing 23.9, Page 878
+// Class HeapSort.java
+// Textbook - Listing 23.10, Page 879
 // Name: <Parth Patel>
 // Class: CS 3305/01
 // Term: Spring 2023
@@ -20,5 +20,20 @@ public class HeapSort {
       // Remove elements from the heap
       for (int i = list.length - 1; i >= 0; i--)
          list[i] = heap.remove();
+   }
+   /** A test method */
+   public static void main(String[] args) {
+
+      Integer[] list = {-44, -5, -3, 3, 3, 1, -4, 0, 1, 2, 4, 5, 53};
+
+      System.out.print("Original List:\t");  //print original list
+      for (int i = 0; i < list.length; i++)
+         System.out.print(list[i] + " ");
+
+      heapSort(list);  //sort the list
+
+      System.out.print("\n\nSorted List:\t");  //print original list
+      for (int i = 0; i < list.length; i++)
+         System.out.print(list[i] + " ");
    }
 }

@@ -1,17 +1,12 @@
-// Generic code for class PQ_heap for Assignment 7 
+// Generic code for class priority_queue_heap for Assignment 5
 // Name: <Parth Patel>
-// Class: CS 3305/01
-// Term: Spring 2023
-// Instructor: Dr. Haddad
-// Assignment: 7
-// IDE Name: <IntelliJ>
-
-import java.util.PriorityQueue;
+// Class: CS 3305/Section#W01
+// Term: Summer 2023
+// Instructor: Prof. Majeed
+// Assignment: 3
 
 public class PQ_heap <E extends Comparable<E>> {
-
-	//Create the heap object as private data member
-	   private Heap<E> heap;
+	   private Heap<E> heap; //Added Heap to store the priority queue
 
 	// Constructor method
     PQ_heap() {

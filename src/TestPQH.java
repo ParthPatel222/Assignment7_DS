@@ -1,10 +1,15 @@
+// Name: <Parth Patel>
+// Class: CS 3305/Section#W01
+// Term: Summer 2023
+// Instructor: Prof. Majeed
+// Assignment: 3
 import java.util.Scanner;
 
-public class TestPQHeap {
+public class TestPQH {
 	public static void main(String[]args){
 		Scanner scan = new Scanner(System.in);
 
-		PQ_heap pq = null;
+		PQ_heap pq = new PQ_heap<>();
 		int choice;
 		String type = "";
 

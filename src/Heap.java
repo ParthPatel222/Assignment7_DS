@@ -89,4 +89,5 @@ public class Heap<E extends Comparable<E>> {
   public E top() {
     return list.get(0);
   }
+
 }
