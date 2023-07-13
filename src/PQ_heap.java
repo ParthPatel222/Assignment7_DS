@@ -5,6 +5,8 @@
 // Instructor: Prof. Majeed
 // Assignment: 3
 
+import java.util.Arrays;
+
 public class PQ_heap <E extends Comparable<E>> {
 	   private Heap<E> heap; //Added Heap to store the priority queue
 
@@ -55,4 +57,11 @@ public class PQ_heap <E extends Comparable<E>> {
 	   }
 	   heap.add(value);
    }
+
+   	// Print the contents of the priority queue
+	   public void print() {
+		   System.out.println(heap.toString());
+	   }
+
+
 }

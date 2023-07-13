@@ -91,7 +91,7 @@ public class TestPQH {
 					System.out.println("Queue is Empty");
 					break;
 				}
-					System.out.println("PQueue Elements: " + pq);
+					pq.print();
 					break;
 				case 8:
 					System.out.println("Exiting Program...");
