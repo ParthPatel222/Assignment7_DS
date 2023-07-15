@@ -1,15 +1,13 @@
 // Class Heap.java 
 // Textbook - Listing 23.9, Page 878
 // Name: <Parth Patel>
-// Class: CS 3305/01
-// Term: Spring 2023
-// Instructor: Dr. Haddad
-// Assignment: 7
-// IDE Name: <IntelliJ>
-
+// Class: CS 3305/Section#W01
+// Term: Summer 2023
+// Instructor: Prof. Majeed
+// Assignment: 3
 public class Heap<E extends Comparable<E>> {
   private java.util.ArrayList<E> list = new java.util.ArrayList<E>();
-  int CAPACITY = 100;
+  int CAPACITY = 100; //Added capacity to limit the size of the heap
 
   /** Create a default heap */
   public Heap() {

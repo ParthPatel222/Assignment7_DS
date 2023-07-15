@@ -1,11 +1,10 @@
 // Class HeapSort.java
 // Textbook - Listing 23.10, Page 879
 // Name: <Parth Patel>
-// Class: CS 3305/01
-// Term: Spring 2023
-// Instructor: Dr. Haddad
-// Assignment: 7
-// IDE Name: <IntelliJ>
+// Class: CS 3305/Section#W01
+// Term: Summer 2023
+// Instructor: Prof. Majeed
+// Assignment: 3
 
 public class HeapSort {
    /** Heap sort method */

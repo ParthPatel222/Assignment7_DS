@@ -3,6 +3,7 @@
 // Term: Summer 2023
 // Instructor: Prof. Majeed
 // Assignment: 3
+
 import java.util.Scanner;
 
 public class TestPQH {
@@ -35,7 +36,7 @@ public class TestPQH {
 					 type = scan.next();
 					 type = type.toLowerCase();
 					if (type.equals("integer")){
-						pq = new PQ_heap<>();
+						pq = new PQ_heap<Integer>();
 					}
 					else if (type.equals("string")){
 						pq = new PQ_heap<String>();
@@ -93,6 +94,7 @@ public class TestPQH {
 				}
 					pq.print();
 					break;
+
 				case 8:
 					System.out.println("Exiting Program...");
 					break;
